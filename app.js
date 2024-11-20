@@ -4,7 +4,7 @@ document.getElementById('trackNumber').addEventListener('click', function () {
     const positionStackApiKey = '5f8d8e76458c9841a0844bacfa487081'; //  PositionStack API key
 
     // Validating the phone number using Numverify API
-    fetch(`http://apilayer.net/api/validate?access_key=${numverifyApiKey}&number=${phoneNumber}`)
+    fetch(`https://apilayer.net/api/validate?access_key=${numverifyApiKey}&number=${phoneNumber}`)
         .then(response => response.json())
         .then(data => {
             const resultDiv = document.getElementById('result');
